@@ -51,15 +51,12 @@ public class Branch implements IBranch {
 
         if (findCustomer(customerName) != null ){
             //customer = new Customer(customerName,transaction)
-            System.out.println(customer.getTransactions());
+//            System.out.println(customer.getTransactions());
             customer.addTransaction(transaction);
-            System.out.println(customer.getTransactions());
+//            System.out.println(customer.getTransactions());
             return true;
         }
-//        this.customers.add(new Customer(customerName,transaction))
-//        c.addTransaction(transaction);
-//        System.out.println(c.getTransactions());
-
+//
 
 
         return false;

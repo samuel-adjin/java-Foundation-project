@@ -52,7 +52,7 @@ public class Bank implements IBank {
     @Override
     public boolean addCustomerTransaction(String branchName, String customerName, double transaction) {
         Branch branch = findBranch(branchName);
-        System.out.println(branch);
+//        System.out.println(branch);
         if (branch == null){
             return false;
         }
@@ -70,10 +70,10 @@ public class Bank implements IBank {
         if (printTransaction) {
 //            System.out.println(branches.get(0).getCustomers().get(1).getTransactions());
             for (int i = 0; i < branches.size(); i++) {
-                System.out.println("branch size" + branches.size());
+//                System.out.println("branch size" + branches.size());
                 for (int j = 0; j < branches.get(i).getCustomers().size(); j++) {
                     int num = j + 1;
-                    System.out.println("Customer size " + branches.get(i).getCustomers().size());
+//                    System.out.println("Customer size " + branches.get(i).getCustomers().size());
                     System.out.println("Customer: " + branches.get(i).getCustomers().get(j).getName() + " [" + num + "]");
                     System.out.println("Transactions");
                     int counter = 0;
