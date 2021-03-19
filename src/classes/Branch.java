@@ -14,7 +14,6 @@ public class Branch implements IBranch {
     }
 
     private Customer findCustomer(String name){
-//         Customer customer = new Customer(name,0.0);
         for (int i = 0; i < customers.size(); i++) {
           if (customers.get(i).getName().equals(name)){
               return customers.get(i);
@@ -50,15 +49,9 @@ public class Branch implements IBranch {
         Customer customer = findCustomer(customerName);
 
         if (findCustomer(customerName) != null ){
-            //customer = new Customer(customerName,transaction)
-//            System.out.println(customer.getTransactions());
             customer.addTransaction(transaction);
-//            System.out.println(customer.getTransactions());
             return true;
         }
-//
-
-
         return false;
     }
 
